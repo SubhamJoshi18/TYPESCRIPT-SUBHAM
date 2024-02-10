@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "parcel-bundler": "^1.12.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
@@ -11,8 +12,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "type": "tsc typescript-4/class.ts",
-    "com": "node typescript-4/class.js",
+    "type": "tsc typescript-5/new.ts",
+    "com": "node typescript-5/new.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
