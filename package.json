@@ -11,8 +11,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "type": "tsc typescript-2/type.ts",
-    "com": "node typescript-2/type.js",
+    "type": "tsc typescript-4/class.ts",
+    "com": "node typescript-4/class.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

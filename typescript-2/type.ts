@@ -122,3 +122,50 @@ const add2 = (a: number, b: number): number => {
 const add3 = (a: number, b: number) => {
   return a + b;
 };
+
+//Void - not returning any thing
+const logger = (message: string): void => {
+  console.log(message);
+};
+
+//Never Expected the function to return
+
+const logger2 = (message: string): void => {
+  if (!logger2) {
+    throw new Error(message);
+  }
+};
+
+//Destructing
+
+const weather = {
+  date: new Date(),
+  time: 20,
+};
+//{date,time} --> do the annotations
+const todayWeather = (weather: { date: Date; time: number }): void => {
+  console.log(weather.date);
+  console.log(weather.time);
+};
+
+todayWeather(weather);
+
+//Object
+const profile = {
+  name: "alex",
+  age: 20,
+  coord: {
+    lot: 0,
+    lat: 15,
+  },
+  setAge(age: number): void {
+    this.age = age;
+  },
+};
+
+//Destruct the profile Object
+const { age, name }: { age: number; name: string } = profile;
+//Nested Properties
+const {
+  coord: { lot, lat },
+}: { coord: { lot: number; lat: number } } = profile;
